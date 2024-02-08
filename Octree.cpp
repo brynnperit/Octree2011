@@ -16,8 +16,7 @@ int ViewingFrustum::containsNode(Vector& pos, float radius) const
 	bool partiallyInside = false;
 	bool inside = true;
 
-	//TODO: Find out why this code is not working properly
-    for (int i = 0; i < 6 && inside; i++)
+	for (int i = 0; i < 6 && inside; i++)
 	{
 		int cornerIndex = 0;
 		// |= is the inclusive or operator- see the above link for details on how this thing works
